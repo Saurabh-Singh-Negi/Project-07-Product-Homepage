@@ -1,6 +1,8 @@
+
 body {
   font-family: Poppins, "sans-serrif";
   margin-left: 20px;
+ 
 }
 
 nav {
@@ -14,21 +16,27 @@ nav {
   justify-content: space-between;
   font-size: 25px;
   position: relative;
-  left: 50px;
 }
 
 .nav-item.active-item {
   color: #fe5e35;
 }
 
-.left-section {
+
+
+.intro-section {
+  display: flex;
+}
+
+/* .left-section {
   width: 800px;
   float: left;
 }
 
+
 .right-section {
   float: right;
-}
+} */
 
 .discount,
 .discount-content {
@@ -78,10 +86,6 @@ p.text {
   left: 200px;
 }
 
-/* .left-section {
-    position: relative;
-    top: -70px;
-  } */
 
 .left-section h1 {
   display: relative;
@@ -130,4 +134,120 @@ p.text {
 
 .discount-content h1 {
   font-size: 55px;
+}
+
+@media screen and (max-width: 1100px) {
+  .intro-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .discount {
+    top: 1300px;
+    right: 640px;
+  }
+
+  .discount-content h4 {
+    position: relative;
+    top: 890px;
+    left: -125px;
+  }
+
+  
+  .discount-content h1 {
+    position: relative;
+    font-size: 55px;
+    top: 850px;
+    left: -135px;
+  }
+
+  .text {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 850px)  {
+  .nav-item {
+    display: none;
+  }
+
+  .left-section h1 {
+    font-family: Fredoka One;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .sub-headlines {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .headphones-img {
+    width: 100%;
+  }
+
+ 
+  .discount {
+    display: none;
+  }
+
+  .discount-content h4 {
+    display: none;
+  }
+
+  
+  .discount-content h1 {
+    display: none;
+  }
+
+  .right-section .action-btn {
+    margin: auto;
+    font-size: 1rem;
+  }
+
+  .left-section .action-btns {
+    display: flex;
+  }
+
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+  }
+
+  .intro-section {
+    padding: 0;
+    margin: 0;
+    border: 2px solid red;
+    width: 70vh;
+  }
+  
+  .right-section .action-btn {
+    position: relative;
+    left: 0px;
+  }
+
+  .nav-items {
+    left: 0px;
+  }
+
+  .left-section h1 {
+    max-width: 60%;
+  }
+  
 }

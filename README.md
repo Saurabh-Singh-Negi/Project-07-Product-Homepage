@@ -1,4 +1,4 @@
-# Project 1 - Shopify Clone
+# Project 07 - Product Homepage
 
 ## Developed By  
 Saurabh Singh Negi
